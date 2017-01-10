@@ -1,0 +1,34 @@
+<header>
+  		<nav class="be-red white large-padding">
+  			<ul class="no-list  middle-xs row center-xs">
+
+  				<li class="col-xs-12 col-sm-8 col-md">
+  				<h1 class="no-margin" id="logo"><%= link_to "Blog Facilito", root_path%></h1>
+  				</li>
+
+  				<li class="col-xs-12 col-sm-8 col-md">
+  				  <%= link_to "Articulos", articles_path%>
+  				</li>
+
+          <% @categories.each do |category|%>
+          <li class="col-xs-12 col-sm-8 col-md">
+            <%= link_to category.name, category %>
+          </li>
+          <% end %>
+
+          <% if user_signed_in? %>
+           <li class="col-xs-12 col-sm-8 col-md">
+              <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete %>
+            </li>
+          <% else %>
+           <li class="col-xs-12 col-sm-8 col-md">
+              <%= link_to "Iniciar sesión", new_user_session_path %>
+            </li>
+
+            <li class="col-xs-12 col-sm-8 col-md">
+              <%= link_to "Crear Cuenta", new_user_registration_path %>
+            </li>
+          <% end %>
+  			</ul>
+  		</nav>
+  	</header>

@@ -1,5 +1,24 @@
-# primerproyectopractica
-Este es mi primer proyecto es el blog en ruby on rails de codigofacilito
+# README
 
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-Este es un comentario para aprender como se establecen los cambios en la plataforma
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
